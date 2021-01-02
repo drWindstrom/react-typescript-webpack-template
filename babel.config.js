@@ -12,6 +12,7 @@ module.exports = function (api) {
   const plugins = [
     '@babel/proposal-class-properties',
     '@babel/proposal-object-rest-spread',
+    'babel-plugin-styled-components',
   ];
   
   // Add plugin for react-refresh in development environment
