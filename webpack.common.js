@@ -21,6 +21,12 @@ module.exports = {
   },
   module: {
     rules: [
+      // Babel-loader 
+      {
+        test: /\.(ts|js)x?$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+      },
       // Load images
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
