@@ -1,8 +1,15 @@
+import {useState} from 'react';
 
 function App() {
+  const [count, setCount] = useState(0);
+
+  function incrementCount() {
+    setCount(count + 1);
+  }
   return (
     <div>
-      Hello World!!!
+      <button onClick={incrementCount}>Increment</button>
+      <p>The Count is: {count}</p>
     </div>
   );
 }
